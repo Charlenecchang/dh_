@@ -1,0 +1,52 @@
+/* src/styles.css */
+
+:root {
+    --main-pink: #ff69b4; /* Pink color */
+    --background: #fff5f8; /* Light pink background */
+    --text-color: #333; /* Darker text for readability */
+    --border-radius: 10px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background);
+    color: var(--text-color);
+  }
+  
+  .home-page {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+  }
+  
+  h1 {
+    color: var(--main-pink);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin: 10px 0 30px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: var(--main-pink);
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
