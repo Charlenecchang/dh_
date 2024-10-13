@@ -8,23 +8,44 @@ function Home({ profileData }) {
 
   return (
     <div className="home">
+      {/* Navigation Bar */}
+      <nav className="navbar">
+        <Link to="/profile" className="nav-item">Edit Profile</Link>
+        <Link to="/StudyMatch" className="nav-item">Find your study buddy</Link>
+        <Link to="/Notifications" className="nav-item">Your Notifications</Link>
+      </nav>
+
       <h1>Welcome back, {name}!</h1>
       <p>Here are some recent events for you:</p>
-      <ul>
-        <li>🌟 Student Org Activity: Hackathon this weekend!</li>
-        <li>📅 Career Fair: October 15th</li>
-        <li>💼 Internship: Applications open for Spring 2025</li>
-      </ul>
-      <div className="button-container">
-        <Link to="/profile">
-          <button className="action-button">Edit Profile</button>
-        </Link>
-        <Link to="/StudyMatch">
-          <button className="action-button">Find your study buddy</button>
-        </Link>
-        <Link to="/Notifications">
-          <button className="action-button">Your Notification</button>
-        </Link>
+      
+      {/* Student Org Activities Section */}
+      <div className="event-category">
+        <h2 className="title">🌟 Student Org Activities</h2>
+        <div className="event-cards">
+          <div className="event-card">Hackathon this weekend! 🚀</div>
+          <div className="event-card">Guest speaker: Industry Leader on October 20th</div>
+          <div className="event-card">Weekly Study Group: Thursdays at 5 PM</div>
+        </div>
+      </div>
+      
+      {/* Career Fairs Section */}
+      <div className="event-category">
+        <h2 className="title">📅 Career Fairs</h2>
+        <div className="event-cards">
+          <div className="event-card">Career Fair: October 15th</div>
+          <div className="event-card">Virtual Career Expo: November 10th</div>
+          <div className="event-card">Networking Event: December 5th</div>
+        </div>
+      </div>
+      
+      {/* Internship Opportunities Section */}
+      <div className="event-category">
+        <h2 className="title">💼 Internship Opportunities</h2>
+        <div className="event-cards">
+          <div className="event-card">Applications open for Spring 2025!</div>
+          <div className="event-card">Internship at T-Mobile released! Apply now!</div>
+          <div className="event-card">Summer Internship: Google - Applications due November 30th</div>
+        </div>
       </div>
     </div>
   );

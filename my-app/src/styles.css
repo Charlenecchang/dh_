@@ -1,94 +1,88 @@
 /* src/styles.css */
 
 :root {
-    --main-pink: #ff69b4; /* Pink color */
-    --background: #fff5f8; /* Light pink background */
-    --text-color: #333; /* Darker text for readability */
-    --border-radius: 10px;
-    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: var(--background);
-    color: var(--text-color);
-  }
-  
-  .home-page {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    text-align: center;
-  }
-  
-  h1 {
-    color: var(--main-pink);
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 1.2rem;
-    margin: 10px 0 30px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    background-color: var(--main-pink);
-    color: white;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-  }
-/* Add to your src/styles.css */
+  --main-pink: #dc5897; /* Main pink color */
+  --background: #fcf3f8; /* Light background color */
+  --text-color: #782344; /* Darker text for readability */
+  --border-radius: 10px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+/* Default title styles */
+.title {
+  font-family: "podium-soft-variable", sans-serif; /* Use the new font */
+  font-variation-settings: "wdth" 100; /* Apply variation settings */
+  color: var(--main-pink);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 300; /* Adjust boldness */
+  letter-spacing: 0.05em; /* Adjust letter spacing */
+}
+
+.home-page {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  /* Apply title class to all headings */
+  text-align: left;
+  @extend .title;
+  margin: 10px 0; /* Add margin for spacing between headings */
+}
+
+p {
+  text-align: left;
+  font-size: 1.2rem;
+  margin: 10px 0 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: var(--main-pink);
+  color: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+/* Profile Styles */
 .profile {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
   background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   text-align: left;
 }
 
 .profile h2 {
-  color: #ff69b4; /* Use your main pink color */
+  color: var(--main-pink); /* Use your main pink color */
 }
 
 .profile-summary {
   margin-top: 20px;
   padding: 10px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-}
-.profile {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
-
-.profile h2 {
-  color: #ff69b4; /* Use your main pink color */
-}
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #ffe6f2;
-  margin: 0;
-  padding: 0;
+  background-color: #fae9f3; /* Lighter pink for summary background */
+  border-radius: var(--border-radius);
 }
 
 .home, .profile {
@@ -96,7 +90,7 @@ body {
   text-align: center;
 }
 
-/* src/styles.css */
+/* Button Styles */
 .button-container {
   display: flex;
   gap: 20px; /* Space between buttons */
@@ -107,8 +101,8 @@ body {
 .action-button {
   padding: 10px 20px;
   background-color: white; /* White background */
-  color: #ff69b4; /* Pink text color */
-  border: 2px solid #ff69b4; /* Pink border */
+  color: var(--main-pink); /* Pink text color */
+  border: 2px solid var(--main-pink); /* Pink border */
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
@@ -116,11 +110,11 @@ body {
 }
 
 .action-button:hover {
-  background-color: #ff69b4; /* Pink background on hover */
+  background-color: var(--main-pink); /* Pink background on hover */
   color: white; /* White text on hover */
 }
 
-/* Notification css */
+/* Notification Styles */
 .notification-page {
   max-width: 600px;
   margin: 50px auto;
@@ -130,6 +124,7 @@ body {
   box-shadow: var(--box-shadow);
   text-align: center;
 }
+
 ul.notification-list {
   list-style-type: none;
   padding: 0;
@@ -149,7 +144,7 @@ ul.notification-list {
 }
 
 .notification-item:hover {
-  background-color: #d981ab;
+  background-color: #c93976; /* Darker pink on hover */
   cursor: pointer;
 }
 
@@ -163,4 +158,160 @@ ul.notification-list {
 .notification-text {
   flex-grow: 1;
   text-align: left;
+}
+/* Add to your existing CSS */
+
+/* Event Category Styles */
+.event-category {
+  margin: 30px 0;
+}
+
+.event-category h2 {
+  text-align: left; /* Align title to the right */
+  margin: 0 20px 10px 0; /* Adjust spacing with margin */
+  font-size: 1.8rem; /* Adjust font size */
+  color: var(--main-pink); /* Use pink for consistency */
+}
+
+/* Event Cards */
+.event-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+  gap: 20px; /* Space between cards */
+  margin-top: 10px; /* Space above cards */
+}
+
+/* Styles for each event card */
+.event-card {
+  flex: 1 1 calc(30% - 20px); /* Adjust card width for responsiveness */
+  background-color: white; /* Card background */
+  border-radius: var(--border-radius); /* Rounded corners */
+  box-shadow: var(--box-shadow); /* Shadow effect */
+  padding: 15px; /* Content padding */
+  text-align: center; /* Center align text inside card */
+  transition: transform 0.3s; /* Smooth hover transition */
+}
+
+.event-card:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .event-card {
+    flex: 1 1 calc(45% - 20px); /* Adjust card width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .event-card {
+    flex: 1 1 100%; /* Full width for mobile devices */
+  }
+}
+/* Add to your existing CSS */
+
+/* Hero Section Styles */
+.hero-section {
+  background-color: var(--main-pink); /* Use main pink color for the background */
+  color: white; /* White text for contrast */
+  padding: 30px 20px; /* Padding for top and bottom */
+  text-align: center; /* Center align text and buttons */
+  border-radius: var(--border-radius); /* Rounded corners */
+  margin-bottom: 30px; /* Space below the hero section */
+}
+
+.hero-title {
+  font-family: "podium-soft-variable", sans-serif; /* Use the new font */
+  font-variation-settings: "wdth" 100; /* Apply variation settings */
+  font-size: 2rem; /* Adjust title font size */
+  margin-bottom: 20px; /* Space below title */
+}
+
+/* Button Container Styles */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center align buttons */
+}
+
+/* Button Styles */
+.action-button {
+  width: 80%; /* Full width of the container */
+  max-width: 300px; /* Max width for larger screens */
+  padding: 10px 20px;
+  background-color: white; /* White background */
+  color: var(--main-pink); /* Pink text color */
+  border: 2px solid var(--main-pink); /* Pink border */
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Transition for smooth hover effect */
+  margin: 10px 0; /* Space between buttons */
+}
+
+/* Hover effect for action buttons */
+.action-button:hover {
+  background-color: var(--main-pink); /* Pink background on hover */
+  color: white; /* White text on hover */
+}
+/* src/styles.css */
+
+.hero-section {
+  background-color: var(--main-pink); /* Use your main pink color */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 20px; /* Space below the hero section */
+}
+
+.hero-section h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.action-button {
+  padding: 10px 20px;
+  background-color: white;
+  color: var(--main-pink);
+  border: 2px solid var(--main-pink);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.action-button:hover {
+  background-color: var(--main-pink);
+  color: white;
+}
+/* Navigation Bar Styles */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the items */
+  background-color: var(--main-pink); /* Use main pink color */
+  padding: 10px 0; /* Add some padding */
+  border-radius: var(--border-radius); /* Optional rounded corners */
+  box-shadow: var(--box-shadow); /* Optional shadow */
+  margin-bottom: 20px; /* Space below the navbar */
+}
+
+.nav-item {
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Space around links */
+  border-radius: var(--border-radius); /* Optional rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.nav-item:hover {
+  background-color: #d498a0; /* Darker pink on hover */
 }
