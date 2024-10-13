@@ -1,0 +1,75 @@
+/* src/components/StudentProfile.css */
+.student-profile {
+ display: flex;
+ justify-content: space-between; 
+  align-items: center;
+ border: 1px solid #ddd;
+ padding: 20px;
+ border-radius: 8px;
+ max-width: 600px;
+ margin: 20px auto;
+ background-color: #f9f9f9;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-image img {
+ border-radius: 50%;
+ width: 150px;
+ height: 150px;
+ object-fit: cover;
+ margin-right: 20px;
+}
+
+.student-details {
+ flex: 1;
+}
+
+.student-details h2 {
+ margin-top: 20px;
+ margin-bottom: 30px;
+}
+
+.student-details p {
+ margin: 8px 0;
+ text-align: left;
+ margin-left: 20px;
+}
+
+.student-details .bio {
+ font-style: italic;
+ color: #555;
+ text-align: left;
+}
+
+.connectButton{
+ margin: 10px;
+ margin-top: 30px;
+ padding: 5px;
+ background-color: #ff69b4;
+ border-radius: 5px;
+ width: 250px;
+}
+
+.navigation-button-left {
+ padding: 10px;
+ margin: 0 10px;
+ border: none;
+ background-color: transparent;
+ cursor: pointer;
+}
+
+.navigation-button-right {
+ padding: 10px;
+ margin: 0 10px;
+ border: none;
+ background-color: transparent;
+ cursor: pointer;
+}
+
+.navigation-buttons button i {
+ font-size: 20px;
+}
+
+.navigation-buttons button:hover {
+ color: #ff69b4;
+}
