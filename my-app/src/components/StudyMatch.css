@@ -1,0 +1,43 @@
+/* src/pages/StudyMatch.css */
+
+/* Main container styling */
+.study-match-container {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ padding: 20px;
+ min-height: 100vh; /* Full viewport height */
+ box-sizing: border-box;
+}
+
+/* Header styling */
+.header {
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+.header h1 {
+ font-size: 3rem; /* Large title font */
+ font-weight: 700;
+ margin-bottom: 10px;
+}
+
+.header p {
+ font-size: 1.2rem;
+ margin-top: 0;
+}
+
+/* Prompt below the profile */
+.match-prompt {
+ margin-top: 20px;
+ font-size: 1rem;
+ text-align: center;
+ padding: 10px;
+ background-color: #fff; /* White background for the prompt */
+ border-radius: 8px; /* Rounded corners */
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+ width: 100%;
+ max-width: 600px; /* Keep the prompt text box from becoming too wide */
+}

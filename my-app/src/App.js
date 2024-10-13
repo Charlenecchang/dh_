@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
+import StudyMatch from './pages/StudyMatch'; // Include the StudyMatch component
 import './styles.css'; // Add your global styles here if any
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home profileData={profileData} />} />
           <Route path="/profile" element={<Profile setProfileData={setProfileData} />} />
+          <Route path="/studymatch" element={<StudyMatch />} /> {/* Add StudyMatch route */}
         </Routes>
       </div>
     </Router>

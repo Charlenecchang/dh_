@@ -96,15 +96,26 @@ body {
   text-align: center;
 }
 
-button {
-  background-color: #ff66b2;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-top: 10px;
+/* src/styles.css */
+.button-container {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  justify-content: center; /* Center the buttons */
+  margin-top: 20px; /* Add some space above the buttons */
 }
 
-button:hover {
-  background-color: #e55d9e;
+.action-button {
+  padding: 10px 20px;
+  background-color: white; /* White background */
+  color: #ff69b4; /* Pink text color */
+  border: 2px solid #ff69b4; /* Pink border */
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Transition for smooth hover effect */
+}
+
+.action-button:hover {
+  background-color: #ff69b4; /* Pink background on hover */
+  color: white; /* White text on hover */
 }
