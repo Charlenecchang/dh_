@@ -22,6 +22,9 @@ function Home({ profileData }) {
         <Link to="/StudyMatch">
           <button className="action-button">Find your study buddy</button>
         </Link>
+        <Link to="/Notifications">
+          <button className="action-button">Your Notification</button>
+        </Link>
       </div>
     </div>
   );

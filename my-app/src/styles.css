@@ -119,3 +119,48 @@ body {
   background-color: #ff69b4; /* Pink background on hover */
   color: white; /* White text on hover */
 }
+
+/* Notification css */
+.notification-page {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+ul.notification-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--main-pink);
+  color: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: background-color 0.3s ease;
+}
+
+.notification-item:hover {
+  background-color: #d981ab;
+  cursor: pointer;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Makes the image circular */
+  margin-right: 15px; /* Space between image and text */
+}
+
+.notification-text {
+  flex-grow: 1;
+  text-align: left;
+}
