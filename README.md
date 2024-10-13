@@ -1,51 +1,25 @@
 # dh_
-Repo for our dubhacks team!
+**Inspiration**
+The inspiration for LinkUp! came from recognizing the challenges students and young professionals face when navigating career opportunities and networking. We noticed that many individuals struggle to find relevant events, internships, and volunteer opportunities that could enhance their professional journey. Our goal was to create a user-friendly platform that consolidates these resources, helping users stay organized and motivated as they pursue career growth.
 
-Our Track: AWS track + Interstellar ConnectionInterstellar Connection
-Student Hub 
-AI personal assistant for students 
-Like people in the workplace they have a Genie AI assistant, we want to provide a personal AI assistant that helps student manages every aspects of their college journey. 
-- Personalized recommendation for students acitivities in the same major. Career fair, opportunities, work, student organization, volunteer opportunities JUST FOR STUDENTS. ( filter by your major / intended major / interest field /career aspiration) 
+**What it does**
+LinkUp! is an early-career planning and networking platform designed for students and young professionals. It allows users to:
 
-Solution:
+- Discover upcoming networking events, workshops, and career fairs
+- Access tailored internship and job opportunities based on their interests
+- Find study buddies to collaborate with on academic projects
+- Receive personalized notifications about new opportunities and events
+- Keep track of notifications and updates in an organized dashboard
+**How we built it**
+We developed LinkUp using React and JavaScript, focusing on creating a dynamic, responsive user experience.
 
-An AI-powered Canvas extension that integrates directly into the Canvas LMS, offering personalized study aids, automatic course material summaries, and intelligent task reminders tailored to each student's performance and learning style. The extension makes the learning experience more efficient, reducing study time and improving retention of information.
+**Challenges we ran into**
+We encountered several challenges during development, particularly in managing the state across multiple components while ensuring the code remained clean and efficient. Additionally, configuring credentials with AWS Bedrock proved to be a significant hurdle. Our initial plan to integrate a chatbot assistant for a more personalized user experience was delayed due to the complexities of this setup.
 
-Core Features:
+**Accomplishments that we're proud of**
+While we have not fully figured out AWS Bedrock yet, we are pleased with the learning journey we've undertaken. This experience has deepened our understanding of cloud technologies and their potential applications, equipping us with valuable insights that will benefit our future development efforts.
 
-- AI-Generated Lecture Summaries:
-The AI processes lecture notes, readings, and videos from Canvas courses, generating concise summaries to help students review key concepts quickly.
-Summaries can be generated in multiple formats: bullet points, flashcards, or short paragraph overviews.
-
-- Personalized Study Plans:
-The AI analyzes the student's coursework, due dates, and current performance to generate a custom study schedule that helps them stay on top of assignments and prepare for exams.
-The study plan adjusts dynamically based on student progress, prioritizing assignments that are due soon or subjects they’re struggling with.
-
-- AI-Based Concept Clarification:
-Students can highlight any difficult concept from their Canvas materials (e.g., a confusing paragraph in a textbook or lecture slide).
-The AI explains the concept in simpler terms, offering definitions, analogies, or additional examples to improve understanding.
-Provides links to additional resources or videos for deeper clarification.
-Generate from course syllabus, slides, or assignment text input? 
-
-- Performance Analytics & Adaptive Learning:
-Tracks student performance in quizzes, assignments, and exams, offering feedback on weak areas.
-Recommends personalized practice questions, extra reading materials, or study resources to help students improve in areas where they are struggling.
-Suggests time-saving strategies for students who perform well, offering lighter study loads on topics they’ve mastered.
-Genie that asks if students need help? (hey it seems like you need help on this area ... resources here)
-
-- Automatic Flashcard Generator:
-Based on course readings, lecture slides, or uploaded notes, the AI creates flashcards with key terms, definitions, and important concepts.
-Flashcards are organized into topics and can be reviewed in customizable intervals for spaced repetition.
-
-- Natural Language Query Integration:
-Students can ask the AI assistant questions about their course (e.g., “What are the key points from today’s lecture?” or “When is my next assignment due?”).
-The AI processes the question and provides answers by pulling relevant information directly from Canvas course materials, calendars, or assignments.
-- Recommendations for student based on the classes they take (analyze their interest, provide career fair, student organization meeting, opportunities) Recommend example: "See what other students taking INFO 340 is doing: ___"
--------
-Backlog
-- Collaborative Study Groups:
-Analyzes common performance trends and course enrollment data from Canvas, recommending students to form study groups with peers who have complementary skills or are enrolled in the same course.
-Automatically generates shared study guides or group quizzes for collaborative learning sessions.
-- Smart Task Reminders & Deadlines Management:
-Automatically extracts assignment deadlines, quizzes, and exam dates from the Canvas calendar.
-Sends smart notifications and reminders to students, recommending study times, breaking down large assignments into manageable chunks, and suggesting optimal study hours based on their personal schedule.
+**What we learned**
+- React and its best practices for organizing components and managing props
+- Team working soft skills
+- The importance of user feedback in iterating on design and functionality to enhance user experience ## What's next for LinkUp Enhance the app's functionality and experience with AWS Bedrock's access to LLMs implementation.
