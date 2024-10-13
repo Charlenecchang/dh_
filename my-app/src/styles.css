@@ -49,4 +49,62 @@
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
   }
-  
+/* Add to your src/styles.css */
+
+.profile {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.profile h2 {
+  color: #ff69b4; /* Use your main pink color */
+}
+
+.profile-summary {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+.profile {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.profile h2 {
+  color: #ff69b4; /* Use your main pink color */
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffe6f2;
+  margin: 0;
+  padding: 0;
+}
+
+.home, .profile {
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #e55d9e;
+}

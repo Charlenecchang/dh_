@@ -1,33 +1,23 @@
 // src/pages/Home.js
-import React, { useEffect, useState } from 'react';
-import '../styles.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../styles.css';
 
-const Home = () => {
-  const [userName] = useState('Charlotte');
-  const [events, setEvents] = useState([]);
-
-  useEffect(() => {
-    const fetchedEvents = [
-      { id: 1, type: 'Student Org Activity', title: 'Hackathon Kickoff', date: 'Oct 14, 2024' },
-      { id: 2, type: 'Career Fair', title: 'Tech Career Expo', date: 'Oct 20, 2024' },
-      { id: 3, type: 'Internship Opportunity', title: 'Marketing Internship at XYZ', date: 'Nov 1, 2024' },
-    ];
-    setEvents(fetchedEvents);
-  }, []);
+function Home({ profileData }) {
+  const name = profileData?.name || 'Guest'; // Fallback to "Guest" if no profile data
 
   return (
-    <div className="home-page">
-      <h1>Welcome back, {userName}!</h1>
-      <p>Here are the latest updates:</p>
+    <div className="home">
+      <h1>Welcome back, {name}!</h1>
+      <p>Here are some recent events for you:</p>
       <ul>
-        {events.map((event) => (
-          <li key={event.id}>
-            <strong>{event.type}:</strong> {event.title} - {event.date}
-          </li>
-        ))}
+        <li>🌟 Student Org Activity: Hackathon this weekend!</li>
+        <li>📅 Career Fair: October 15th</li>
+        <li>💼 Internship: Applications open for Spring 2025</li>
       </ul>
+      <Link to="/profile">Edit Profile</Link>
     </div>
   );
-};
+}
 
 export default Home;
